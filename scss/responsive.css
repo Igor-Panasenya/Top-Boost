@@ -1,0 +1,536 @@
+@media screen and (max-width: 1200px) {
+  body header .container {
+    max-width: 90%;
+  }
+  body header .container .language-box {
+    font-size: 10px;
+    line-height: 12px;
+    z-index: 15;
+  }
+  body header .container .menu {
+    gap: 25px;
+  }
+  body header .container .menu a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  body main {
+    margin-top: 200px;
+  }
+  body main .bg-top-boost {
+    font-size: 100px;
+  }
+  body main .container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container .banner-title h1 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  body main .container .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 90px 28px;
+    margin-top: 38px;
+  }
+  body main .container .banner::before {
+    height: 100%;
+  }
+  body main .container .banner::after {
+    height: 100%;
+  }
+  body main .container .banner img {
+    width: 368px;
+    height: 253px;
+  }
+  body main .container .banner .banner-content::before {
+    height: 45%;
+  }
+  body main .container .banner .banner-content::after {
+    height: 45%;
+  }
+  body main .container .banner .banner-content h2 {
+    font-size: 24px;
+  }
+  body main .container .banner .banner-content .banner-text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  body main .container .banner .banner-content a {
+    margin-top: 16px;
+  }
+  body main .container .banner .banner-content a span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    background: linear-gradient(102.55deg, #FF55E4 33.97%, rgba(43, 38, 255, 0.65) 127.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 21px;
+    transition: var(--transition);
+  }
+  body main .container .banner .banner-content a:hover span {
+    margin-right: 39px;
+  }
+  body main .container .product-list {
+    justify-content: center;
+  }
+  body main .container .product-list::before {
+    height: 35%;
+  }
+  body main .container .product-list::after {
+    height: 35%;
+  }
+  body main .container .product-list .product-list-header h1 {
+    font-size: 40px;
+    max-width: 330px;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu .game-choice-list {
+    position: relative;
+    z-index: 15;
+  }
+  body main .container .product-list .product-list-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 29px;
+    margin-top: 43px;
+    padding-bottom: 93px;
+  }
+  body main .container .product-list .product-list-items::before {
+    height: 80%;
+  }
+  body main .container .product-list .product-list-items::after {
+    height: 80%;
+  }
+  body main .container .product-list .product-list-items .product-item-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body main .container .product-list .product-list-items .product-item-card:nth-child(6) {
+    display: none;
+  }
+  body main .container .product-list .product-list-items .product-item-card:nth-child(7) {
+    display: none;
+  }
+  body main .container .product-list .product-list-items .product-item-card:nth-child(8) {
+    display: none;
+  }
+  body main .container .product-list .product-list-items .product-item-card:nth-child(9) {
+    display: none;
+  }
+  body main .container .product-list .product-list-items .product-item-card:nth-child(10) {
+    display: none;
+  }
+  body footer {
+    padding: 10px;
+  }
+  body footer::before {
+    height: 25px;
+  }
+  body footer .container {
+    max-width: 80%;
+    margin-top: 55px;
+  }
+  body footer .container .footer-main {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 20% 73%;
+  }
+  body footer .container .footer-main .footer-logo {
+    text-align: center;
+    gap: 50px;
+  }
+  body footer .container .footer-main .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 600px;
+  }
+  body footer .container .footer-main .footer-container .footer-info-box {
+    text-align: center;
+  }
+  body footer .container .footer-main .footer-container .footer-info-box h5 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  body footer .container .footer-main .footer-container .footer-info-box .footer-list-links .footer-link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  body footer .container .footer-privacy-policy {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 90px;
+    text-align: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 20% 73%;
+  }
+  body footer .container .footer-privacy-policy .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 19px 0;
+    max-width: 600px;
+    padding-top: 19px;
+  }
+  body footer .container .footer-privacy-policy .footer-container .payment-xs {
+    display: none;
+  }
+  body footer .container .footer-privacy-policy .footer-container::before {
+    max-width: 100%;
+    height: 4px;
+  }
+  body footer .container .footer-text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 850px) {
+  body.active {
+    overflow: hidden;
+  }
+  body header {
+    background: #050A20;
+  }
+  body header .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 5px;
+  }
+  body header .container .logo-box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 15;
+  }
+  body header .container .game-list-menu {
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 20;
+    background: #0E1639;
+  }
+  body header .container .language-box {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 10px;
+    line-height: 12px;
+    z-index: 15;
+  }
+  body header .container .menu-icon {
+    display: block;
+  }
+  body header .container .navbar .menu {
+    display: none;
+  }
+  body header .container .navbar .menu-xs {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: -120%;
+    z-index: 10;
+    width: 100vw;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: var(--transition);
+    background: radial-gradient(80% 80% at 10% 50%, rgba(255, 85, 228, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #001028;
+  }
+  body header .container .navbar .menu-xs li:first-child .menu-item-circle, body header .container .navbar .menu-xs li:first-child .left-box-circle {
+    background-color: #058E6E;
+  }
+  body header .container .navbar .menu-xs li:nth-child(2) .menu-item-circle, body header .container .navbar .menu-xs li:nth-child(2) .left-box-circle {
+    background-color: #005BBF;
+  }
+  body header .container .navbar .menu-xs li:nth-child(3) .menu-item-circle, body header .container .navbar .menu-xs li:nth-child(3) .left-box-circle {
+    background-color: #E82A2A;
+  }
+  body header .container .navbar .menu-xs li:last-child .menu-item-circle, body header .container .navbar .menu-xs li:last-child .left-box-circle {
+    background-color: #FF4AED;
+  }
+  body header .container .navbar .menu-xs .menu-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body header .container .navbar .menu-xs .menu-item .left-box {
+    position: absolute;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: #050A20;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 22px 13px;
+    width: 60px;
+  }
+  body header .container .navbar .menu-xs .menu-item .left-box .left-box-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  body header .container .navbar .menu-xs .menu-item .menu-item-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+  body header .container .navbar .menu-xs .menu-item .menu-item-content {
+    margin-left: 10px;
+    max-width: 165px;
+  }
+  body header .container .navbar .menu-xs .menu-item .menu-item-content h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  body header .container .navbar .menu-xs .menu-item .menu-item-content p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+  body header .container .navbar .menu-xs.active {
+    left: -5%;
+  }
+  body header .container .signIn-box {
+    display: none;
+  }
+  body header .container .signIn-icon {
+    display: block;
+  }
+  body main {
+    margin-top: 190px;
+  }
+  body main .bg-top-boost {
+    display: none;
+  }
+  body main .container {
+    align-items: center;
+  }
+  body main .container .banner-title h1 {
+    font-size: 26px;
+    line-height: 120%;
+    max-width: 200px;
+  }
+  body main .container .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background: transparent;
+    border: transparent;
+    padding: 0;
+    margin-top: 26px;
+  }
+  body main .container .banner::before {
+    display: none;
+  }
+  body main .container .banner::after {
+    display: none;
+  }
+  body main .container .banner img {
+    width: 316px;
+    height: 217px;
+  }
+  body main .container .banner .banner-content {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .container .banner .banner-content::before {
+    display: none;
+  }
+  body main .container .banner .banner-content::after {
+    display: none;
+  }
+  body main .container .banner .banner-content h2 {
+    display: none;
+  }
+  body main .container .banner .banner-content .banner-text {
+    display: none;
+  }
+  body main .container .banner .banner-content a {
+    margin-top: 22px;
+  }
+  body main .container .banner .banner-content a span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    background: linear-gradient(102.55deg, #FF55E4 33.97%, rgba(43, 38, 255, 0.65) 127.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 21px;
+    transition: var(--transition);
+  }
+  body main .container .banner .banner-content a:hover span {
+    margin-right: 39px;
+  }
+  body main .container .product-list {
+    position: relative;
+  }
+  body main .container .product-list::before {
+    display: none;
+  }
+  body main .container .product-list::after {
+    display: none;
+  }
+  body main .container .product-list .product-list-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 91px;
+    height: 110px;
+  }
+  body main .container .product-list .product-list-header h1 {
+    font-size: 26px;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu {
+    position: relative;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu .game-choice-main {
+    padding: 25px 20px 25px 30px;
+    width: 286px;
+    margin: 22px auto;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu .game-choice-list {
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 0;
+    width: 281px;
+    overflow: hidden;
+    transition: var(--transition);
+    background: #23354D;
+    margin-top: 5px;
+    z-index: 10;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu .game-choice-list.active {
+    height: 107.5%;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu .game-choice-list .game-choice-item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: capitalize;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  body main .container .product-list .product-list-header .games-choice-menu .game-choice-list .game-choice-item:hover {
+    background-color: rgba(206, 185, 40, 0.21);
+  }
+  body main .container .product-list .product-list-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  body main .container .product-list .product-list-items::before {
+    display: none;
+  }
+  body main .container .product-list .product-list-items::after {
+    display: none;
+  }
+  body main .container .product-list .product-list-items .product-item-card:nth-child(5) {
+    display: none;
+  }
+  body main .container .product-list .product-list-items .product-list-items-more {
+    margin: 63px auto 116px auto;
+  }
+  body footer .container {
+    max-width: 95%;
+    padding: 0 0 22px 0;
+  }
+  body footer .container .footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body footer .container .footer-main .footer-logo {
+    text-align: center;
+    justify-content: space-between;
+  }
+  body footer .container .footer-main .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 600px;
+    padding-top: 30px;
+  }
+  body footer .container .footer-main .footer-container .footer-info-box h5 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  body footer .container .footer-main .footer-container .footer-info-box .footer-list-links .footer-link {
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+  }
+  body footer .container .footer-privacy-policy {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 90px;
+    text-align: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 25% 70%;
+  }
+  body footer .container .footer-privacy-policy .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 19px 0;
+    max-width: 600px;
+    padding-top: 19px;
+  }
+  body footer .container .footer-privacy-policy .footer-container .payment-md {
+    display: none;
+  }
+  body footer .container .footer-privacy-policy .footer-container .payment-xs {
+    display: block;
+  }
+  body footer .container .footer-privacy-policy .footer-container::before {
+    max-width: 100%;
+    height: 4px;
+  }
+  body footer .container .footer-text {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,798 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+:root {
+  --transition: all ease 0.15s;
+}
+
+html, body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+  background-image: url("/img/main_bg.png");
+  background-size: cover;
+  background-attachment: scroll;
+}
+body header .container {
+  position: relative;
+  max-width: 1075px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .container .menu-icon {
+  display: none;
+}
+body header .container .logo-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+body header .container .logo-box:hover .blur {
+  background: rgba(255, 0, 0, 0.2);
+}
+body header .container .logo-box .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 137px;
+  height: 145px;
+  background: rgba(217, 217, 217, 0.2);
+  filter: blur(3px);
+  transition: var(--transition);
+}
+body header .container .logo-box .logo {
+  position: relative;
+  margin: 6px 15px;
+}
+body header .container .logo-box .select-game {
+  position: relative;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 9px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+body header .container .logo-box .select-game .arrow-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  transform: rotate(180deg);
+}
+body header .container .logo-box .select-game .arrow-box.active {
+  transform: rotate(0deg);
+}
+body header .container .logo-box .select-game .blur {
+  background: rgba(217, 217, 217, 0.05);
+  filter: blur(3px);
+  height: 86px;
+}
+body header .container .game-list-menu {
+  position: absolute;
+  top: 145px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 0px 0px 30px 30px;
+  background-image: url("/img/games-BG.png");
+  width: 347px;
+  z-index: 15;
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  padding: 0px 45px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: var(--transition);
+}
+body header .container .game-list-menu.active {
+  max-height: 480px;
+  padding: 63px 45px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+body header .container .game-list-menu .game-list-item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  transition: var(--transition);
+}
+body header .container .game-list-menu .game-list-item:hover .game-item-logo {
+  background: radial-gradient(80% 80% at 50% 50%, rgba(243, 207, 30, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 0px 40px rgba(243, 207, 30, 0.7);
+}
+body header .container .game-list-menu .game-list-item .game-item-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 85, 228, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  border: 1px dashed rgba(255, 255, 255, 0.8);
+  transition: var(--transition);
+}
+body header .container .game-list-menu .game-list-item .game-item-content h4 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+}
+body header .container .game-list-menu .game-list-item .game-item-content p {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+}
+body header .container .language-box {
+  position: relative;
+  display: flex;
+}
+body header .container .language-box .language-main {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  font-weight: 400;
+  transition: var(--transition);
+}
+body header .container .language-box .language-main:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body header .container .language-box .language-main.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(217, 217, 217, 0.6);
+  opacity: 0.8;
+}
+body header .container .language-box .language-main:hover p {
+  opacity: 1;
+}
+body header .container .language-box .language-main p {
+  opacity: 0.8;
+}
+body header .container .language-box .language-main .arrow-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  transform: rotate(180deg);
+}
+body header .container .language-box .language-main .arrow-box.active {
+  transform: rotate(0deg);
+}
+body header .container .language-box .language-list-menu {
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 174px;
+  background: #0E1639;
+  border-radius: 0px 0px 30px 30px;
+  background-image: url("/img/languages-BG.png");
+  z-index: 15;
+  border: 0 solid rgba(255, 255, 255, 0.1);
+  padding: 0 23px;
+  overflow: hidden;
+  height: 0;
+  transition: var(--transition);
+}
+body header .container .language-box .language-list-menu.active {
+  height: 280px;
+  padding: 23px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+body header .container .language-box .language-list-menu .language-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255, 85, 228, 0.1) 0%, rgba(217, 217, 217, 0) 100%, rgba(255, 58, 58, 0.1) 100%);
+  border: 0.5px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 0px 0px 9px 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 3px 22px 3px 6px;
+  transition: var(--transition);
+}
+body header .container .language-box .language-list-menu .language-list-item:hover {
+  background: rgba(206, 185, 40, 0.21);
+}
+body header .container .menu {
+  display: flex;
+  gap: 49px;
+}
+body header .container .menu a {
+  opacity: 0.6;
+  font-weight: 600;
+  transition: var(--transition);
+}
+body header .container .menu a.active, body header .container .menu a:hover {
+  opacity: 1;
+}
+body header .container .menu-xs {
+  display: none;
+}
+body header .container .signIn-box {
+  display: flex;
+  border-radius: 20px;
+  transition: var(--transition);
+}
+body header .container .signIn-box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body header .container .signIn-box:active {
+  position: relative;
+  top: 1px;
+}
+body header .container .signIn-icon {
+  display: none;
+}
+body main {
+  position: relative;
+  z-index: 1;
+  margin-top: 255px;
+}
+body main::before {
+  content: "";
+  position: absolute;
+  top: -74px;
+  left: 50%;
+  width: 1075px;
+  height: 9px;
+  transform: translate(-50%);
+  background: rgba(43, 63, 87, 0.8);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+body main .bg-top-boost {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.03);
+  text-align: center;
+  width: 1200px;
+}
+body main .container {
+  position: relative;
+  max-width: 1075px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body main .container .banner-title h1 {
+  font-family: "Rogue Hero Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+  margin: 0 auto;
+}
+body main .container .banner-title h1 span {
+  color: rgb(232, 42, 42);
+}
+body main .container .banner {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  gap: 78px;
+  background: #001028;
+  border: 5px solid #232B46;
+  border-radius: 20px;
+  padding: 90px;
+  margin-top: 55px;
+  max-width: 100%;
+}
+body main .container .banner .banner-content {
+  display: flex;
+  flex-direction: column;
+}
+body main .container .banner .banner-content h2 {
+  font-family: "Rogue Hero Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 330px;
+}
+body main .container .banner .banner-content h2 span {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(102.55deg, #FF55E4 33.97%, rgba(43, 38, 255, 0.65) 127.75%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+body main .container .banner .banner-content .banner-text {
+  margin-top: 24px;
+  max-width: 330px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  opacity: 0.8;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body main .container .banner .banner-content a {
+  margin-top: 21px;
+}
+body main .container .banner .banner-content a span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  background: linear-gradient(102.55deg, #FF55E4 33.97%, rgba(43, 38, 255, 0.65) 127.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 21px;
+  transition: var(--transition);
+}
+body main .container .banner .banner-content a:hover span {
+  margin-right: 39px;
+}
+body main .container .banner .banner-content::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -80px;
+  height: 50%;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+body main .container .banner .banner-content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -80px;
+  height: 50%;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+body main .container .banner::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -40px;
+  height: 540px;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+body main .container .banner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -40px;
+  height: 540px;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+body main .container .product-list {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+body main .container .product-list::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -75px;
+  height: 1327px;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+body main .container .product-list::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -75px;
+  height: 1327px;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+body main .container .product-list .product-list-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 136px;
+  height: 110px;
+  overflow: inherit;
+}
+body main .container .product-list .product-list-header::before {
+  content: "";
+  position: absolute;
+  top: 66px;
+  left: 50%;
+  width: 1075px;
+  height: 9px;
+  transform: translate(-50%);
+  background: rgba(43, 63, 87, 0.8);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+body main .container .product-list .product-list-header h1 {
+  font-family: "Rogue Hero Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 675px;
+}
+body main .container .product-list .product-list-header h1 span {
+  color: rgb(232, 42, 42);
+}
+body main .container .product-list .product-list-header .games-choice-menu {
+  cursor: pointer;
+  transition: var(--transition);
+}
+body main .container .product-list .product-list-header .games-choice-menu:hover .game-choice-main, body main .container .product-list .product-list-header .games-choice-menu.active .game-choice-main {
+  color: #FF55E4;
+  border: 2px solid rgba(255, 85, 228, 0.6);
+}
+body main .container .product-list .product-list-header .games-choice-menu.active .game-choice-main svg {
+  transform: rotate(180deg);
+}
+body main .container .product-list .product-list-header .games-choice-menu .game-choice-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 25px 30px;
+  width: 286px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  transition: var(--transition);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+body main .container .product-list .product-list-header .games-choice-menu .game-choice-main svg {
+  transition: var(--transition);
+}
+body main .container .product-list .product-list-header .games-choice-menu .game-choice-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  height: 0;
+  width: 281px;
+  overflow: hidden;
+  transition: var(--transition);
+  background: #23354D;
+  margin-top: 5px;
+}
+body main .container .product-list .product-list-header .games-choice-menu .game-choice-list.active {
+  height: 107.5%;
+}
+body main .container .product-list .product-list-header .games-choice-menu .game-choice-list .game-choice-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: capitalize;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+body main .container .product-list .product-list-header .games-choice-menu .game-choice-list .game-choice-item:hover {
+  background-color: rgba(206, 185, 40, 0.21);
+}
+body main .container .product-list .product-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 53px;
+  margin-top: 100px;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+body main .container .product-list .product-list-items::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -35px;
+  height: 2220px;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+body main .container .product-list .product-list-items::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -35px;
+  height: 2220px;
+  width: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+body main .container .product-list .product-list-items .product-item-card {
+  position: relative;
+  box-sizing: border-box;
+  width: 323px;
+  height: 473px;
+  background: #050A20;
+  border: 3px solid rgba(153, 153, 153, 0.3);
+  border-radius: 30px;
+  padding: 0 34px;
+  transition: var(--transition);
+}
+body main .container .product-list .product-list-items .product-item-card:hover .logo-game-card-border {
+  background: #FF55E4;
+}
+body main .container .product-list .product-list-items .product-item-card:hover .card-img-main-hover {
+  z-index: 3;
+}
+body main .container .product-list .product-list-items .product-item-card .card-img-main {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  transition: var(--transition);
+  z-index: 2;
+}
+body main .container .product-list .product-list-items .product-item-card .card-img-main-hover {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  transition: var(--transition);
+  z-index: 1;
+}
+body main .container .product-list .product-list-items .product-item-card .logo-game-card-border {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 30px;
+  top: 27px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  z-index: 4;
+  transition: var(--transition);
+}
+body main .container .product-list .product-list-items .product-item-card .logo-game-card-border .logo-game-card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .container .product-list .product-list-items .product-item-card h3 {
+  position: relative;
+  top: 181px;
+}
+body main .container .product-list .product-list-items .product-item-card .product-item-text {
+  position: absolute;
+  top: 307px;
+}
+body main .container .product-list .product-list-items .product-item-card a {
+  position: absolute;
+  top: 387px;
+}
+body main .container .product-list .product-list-items .product-item-card a span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  background: linear-gradient(102.55deg, #FF55E4 33.97%, rgba(43, 38, 255, 0.65) 127.75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 21px;
+  transition: var(--transition);
+}
+body main .container .product-list .product-list-items .product-item-card a:hover span {
+  margin-right: 39px;
+}
+body main .container .product-list .product-list-items .product-list-items-more {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 97px;
+  margin-top: 200px;
+  height: 30px;
+}
+body main .container .product-list .product-list-items .product-list-items-more:hover span {
+  opacity: 0.5;
+}
+body main .container .product-list .product-list-items .product-list-items-more span {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  opacity: 0.2;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+body footer {
+  position: relative;
+  margin-top: 58px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 100%;
+}
+body footer::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(100.21deg, #FD3575 -52.22%, rgba(216, 114, 21, 0.260417) 42.89%), #FD3575;
+}
+body footer .container {
+  max-width: 1075px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body footer .container .footer-main {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 20% 73%;
+}
+body footer .container .footer-main .footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+body footer .container .footer-main .footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px 0 55px 55px;
+  width: 100%;
+}
+body footer .container .footer-main .footer-container .footer-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+body footer .container .footer-main .footer-container .footer-info-box h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #E82A2A;
+  opacity: 0.8;
+}
+body footer .container .footer-main .footer-container .footer-info-box .footer-list-links {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+body footer .container .footer-main .footer-container .footer-info-box .footer-list-links .footer-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+  transition: var(--transition);
+}
+body footer .container .footer-main .footer-container .footer-info-box .footer-list-links .footer-link:hover {
+  color: #E82A2A;
+}
+body footer .container .footer-privacy-policy {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 20% 73%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+body footer .container .footer-privacy-policy .footer-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 55px 55px 55px;
+  width: 100%;
+  padding-top: 45px;
+}
+body footer .container .footer-privacy-policy .footer-container .payment-xs {
+  display: none;
+}
+body footer .container .footer-privacy-policy .footer-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 9px;
+  background: rgba(232, 42, 42, 0.8);
+}
+body footer .container .footer-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+  padding-bottom: 63px;
+}
+
+@font-face {
+  font-family: "Rogue Hero Condensed";
+  src: url("/fonts/rogue_hero/rogueherocond.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=main.css.map */
